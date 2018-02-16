@@ -3,6 +3,10 @@ import readfile as rf
 
 f_name = raw_input("Enter The Dataset Name : ")
 n_list = rf.fileread(f_name)
+if(f_name==-1) :
+    exit(0)
+
+print f_name
 
 finaldict = {}
 

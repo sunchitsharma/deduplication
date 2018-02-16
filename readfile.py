@@ -1,6 +1,11 @@
 import re
 def fileread(name_of_file):
-    f= open(name_of_file,"r")
+    f=None
+    try:
+        f= open(name_of_file,"r")
+    except:
+        print " Sorry Enter a valid file name "
+        exit(0)
 
     dicdata=[]
     strdata = f.readlines()
